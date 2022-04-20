@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="Profe" />
+		<title></title>
+	</head>
+	<style>
+		header {
+			width: 100%;
+			height: 70px;
+			background-color: blue;
+			margin: 0;
+			color: white;
+		}
+		.dr {
+			height: 70px;
+			width: 45%;
+			float: left;
+			box-sizing: border-box;
+		}
+		.iz {
+			height: 70px;
+			width: 55%;
+			float: left;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		div {
+			border: 1px red solid;
+			overflow: hidden;
+		}
+		.uno {
+			height: 70px;
+			width: 33%;
+			float: left;
+			box-sizing: border-box;
+		}
+		.dos {
+			height: 70px;
+			width: 33%;
+			float: left;
+			box-sizing: border-box;
+		}
+		.tres {
+			height: 70px;
+			width: 33%;
+			float: left;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+
+		section {
+			width: 55%;
+			height: 600px;
+			float: left;
+			box-sizing: border-box;
+			background-color: grey;
+		}
+		main {
+			padding: 3px;
+			background-color: pink;
+			width: 45%;
+			float: left;
+			height: 600px;
+			box-sizing: border-box;
+		}
+		main form input {
+			margin: 3px;
+			padding: 10px;
+		}
+		footer {
+			text-align: center;
+			background-color: aqua;
+		}
+		.calendario input {
+			padding: 0;
+			width: 40px;
+			margin: 2px;
+		}
+		input[type="reset"],
+		input[type="submit"] {
+			width: 20%;
+			min-width: 200px;
+			cursor: pointer;
+		}
+		input[type="reset"] {
+			background-color: red;
+			float: right;
+		}
+		input[type="submit"] {
+			background-color: green;
+			float: left;
+		}
+
+		input[type="number"]::-webkit-inner-spin-button {
+			opacity: 1;
+		}
+		@media only screen and (max-width: 600px) {
+		}
+	</style>
+	<body>
+		<header>
+			<div class="iz"><h1>facebook</h1></div>
+			<div class="dr">
+				<form action="" method="GET">
+					<div class="uno">
+						<label for="fnombre">Nomtre</label><br />
+						<input type="text" name="fnombre" placeholder="nombre" /><br />
+						<input type="checkbox" name="ch" />
+						<label for="ch">no cerrar sesion</label>
+					</div>
+					<div class="dos">
+						<label for="con">Contraseña</label><br />
+						<input type="password" name="con" placeholder="nombre" /><br />
+						<a href="">¿Has olvidado la constrseña?</a>
+					</div>
+					<div class="tres">
+						<input type="submit" value="enviar" />
+					</div>
+				</form>
+			</div>
+		</header>
+		<section>sssss</section>
+		<main>
+			<h1>Registrate</h1>
+			<h3>es gratis y los seguira siendo</h3>
+			<form action="" method="GET">
+				<label for="nom"></label>
+				<input type="text" name="nom" placeholder="nombre" size="26" />
+				<label for="apellido"></label>
+				<input
+					type="text"
+					name="apellido"
+					placeholder="apellidos"
+					size="25"
+				/><br />
+				<label for="mail"></label>
+				<input
+					type="email"
+					name="mail"
+					placeholder="Tu correo"
+					size="60"
+				/><br />
+				<label for="remail"></label>
+				<input
+					type="email"
+					name="remail"
+					placeholder="vuleve a poner correo"
+					size="60"
+				/><br />
+				<label for="ic"></label>
+				<input
+					type="password"
+					name="ic"
+					placeholder="contraseña"
+					size="60"
+				/><br />
+				<label for="data">fecha de nacimiento</label><br />
+				<input type="date" name="data" colw="1" />
+				<a href="http://">¿Porque te piden la fecha......?</a><br /><br />
+				<div class="calendario">
+					<input type="number" placeholder="dia" />
+					<label for=""></label>
+					<input type="number" placeholder="mes" />
+					<label for=""></label>
+					<input type="number" placeholder="año" />
+					<label for=""></label>
+				</div>
+				<br />
+				<label for="hm"></label>
+				<input type="radio" name="hm" id="mujer" value="mujer" />
+				<label for="mujer">mujer</label>
+
+				<input type="radio" name="hm" id="hombre" value="hombre" />
+				<label for="hombre">hombre</label><br /><br />
+				<input type="radio" name="hm" checked hidden />
+				<input type="submit" value="registrarse" />
+			</form>
+		</main>
+		<footer>dsmdsdmsdsd sd sds dsds ds d</footer>
+	</body>
+</html>
+
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2}" //*
+
+<form action="" method="get" target="_blank"></form>
+*// autofocus required // para seleccionar directamente
+<label for="email" name="email"></label>
+<input type="email" name="email" autocomplete="on" />
+<label for="password" name="password"></label>
+<input type="password" name="password" required />
+<input type="number" name="numero" max="" min="" value="25" />
+<select name="selector" multiple>
+	<option value="cat" selected>Cataluña</option>
+	<option value="cas" selected>Castella y Lleó</option>
+	<option value="and">Andalucia</option>
+</select>
+<input type="date" value="2000-05-11" />
+<input type="time" value="09:32" />
+<input type="week" value="2022-W14" />
+<input type="file" accept=".jpg,.gift" />
+<input type="reset" />

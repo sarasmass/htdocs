@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Sara Secall" />
+		<meta name="description" content="" />
+		<title>Formulario</title>
+
+		<style>
+			form div {
+				margin: auto;
+				width: 60%;
+				border: 2px red solid;
+				min-width: min-content;
+				padding: 10px;
+				margin-bottom: 2px;
+			}
+			form div div {
+				border: 2px blue solid;
+				text-align: left;
+			}
+			form div div div {
+				border: 2px green solid;
+				text-align: right;
+			}
+			fieldset {
+				background-color: rgb(221, 221, 221);
+			}
+			.naranja {
+				float: center;
+				border-color: orange;
+				padding: 0;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 35%;
+				height: 50px;
+				overflow: hidden;
+				position: relative;
+			}
+			.naranja select {
+				height: 100%;
+				width: 100%;
+				font-size: x-large;
+				background-color: blueviolet;
+			}
+			.naranja::after {
+				top: 0;
+				right: 0;
+				position: absolute;
+				background-color: orange;
+				width: 50px;
+				height: 50px;
+				content: "\025be";
+				pointer-events: none;
+				text-align: center;
+				font-size: x-large;
+			}
+			.naranja select optgroup {
+				background-color: green;
+				color: white;
+			}
+			.naranja select optgroup option {
+				background-color: blue;
+				color: white;
+			}
+			.naranja select option:checked {
+				background-color: red;
+			}
+			.boton {
+				background-color: green;
+				width: 30%;
+				color: white;
+			}
+			.boton2 {
+				background-color: red;
+				width: 30%;
+				color: white;
+				float: right;
+			}
+
+			.boton2:hover {
+				background-color: yellow;
+			}
+			input[type="number"]::-webkit-inner-spin-button {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form action="./receptor.php" method="get" target="_blank">
+				<fieldset>
+					<legend>Titulo del form</legend>
+					<div>
+						<div>
+							<label>Name user:</label>
+							<input
+								type="text"
+								name="nameUser"
+								id="nameUser"
+								placeholder="name user"
+							/>
+						</div>
+						<div>
+							<label>Email:</label>
+							<input type="email" name="email" placeholder="email" />
+						</div>
+						<div>
+							<label>telefono</label>
+							<input type="tel" name="telefono" placeholder="6772777705" />
+						</div>
+					</div>
+					<div>
+						<div>
+							<div>
+								<input type="radio" name="saveornot" center />
+								<label>1</label>
+							</div>
+							<div>
+								<input type="radio" name="saveornot" />
+								<label>2</label>
+							</div>
+							<div>
+								<input checked type="radio" name="saveornot" />
+								<label>3</label>
+							</div>
+						</div>
+					</div>
+					<div>
+						<textarea name="" id="" cols="5" rows="5"></textarea>
+					</div>
+					<div>
+						<div class="naranja">
+							<select>
+								<optgroup label="hola">
+									<option>1</option>
+									<option>2</option>
+									<option selected>3</option>
+								</optgroup>
+								<optgroup label="grupo 2">
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div>
+						<label name="dos">Numero</label>
+						<input
+							name="dos"
+							type="number"
+							value="3"
+							min="1"
+							max="10"
+							style="font-size: x-large; width: 10%"
+						/>
+					</div>
+					<div>
+						<label name="fecha">FECHA </label>
+						<div>
+							<label name="semana">semana </label>
+							<input type="week" name="semana" value="2022-W20" />
+						</div>
+						<div>
+							<label name="mes">mes </label>
+							<input type="month" name="mes" value="2022-05" />
+						</div>
+						<div>
+							<label name="date">Fecha </label>
+							<input type="date" name="date" value="2000-11-03" />
+						</div>
+					</div>
+					<div>
+						<label for="archivo"></label>
+						<input type="file" name="archivo" accept=".zip" />
+					</div>
+					<div>
+						<input class="boton" type="submit" value="send" />
+						<input class="boton2" type="reset" value="borrar" />
+					</div>
+				</fieldset>
+				<input
+					type="reset"
+					value="Soy un boton"
+					style="background-color: red; border-radius: 20px; width: 20%"
+				/>
+			</form>
+		</div>
+	</body>
+</html>

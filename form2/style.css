@@ -1,0 +1,49 @@
+body {
+  background-color: #d1fdef;
+  font-family: verdana;
+}
+.main {
+  background-color: #7fffd4;
+  margin: 5%;
+  padding: 5px;
+  border-radius: 50px;
+  font-family: verdana;
+  color: coral;
+  border: 5px coral solid;
+}
+.center {
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  border: 5px coral solid;
+  background-color: #7fffd4;
+  margin: auto;
+}
+
+th {
+  background-color: #00bfff;
+  color: #ff4000;
+  text-transform: uppercase;
+}
+td,
+th {
+  border: 1px solid coral;
+  text-align: left;
+  padding: 8px;
+}
+.bot1 {
+  background-color: green;
+  margin-top: 20px;
+}
+.bot2 {
+  background-color: red;
+  margin-top: 20px;
+}
+.asd {
+  margin-left: 20px;
+}
